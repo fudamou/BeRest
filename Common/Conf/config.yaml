@@ -1,0 +1,19 @@
+#URL_MODEL
+#0 普通模式       http://hostname/?m=home&c=user&a=login&var=value
+#              模块VAR_MODULE 控制器VAR_CONTROLLER 方法VAR_ACTION
+#1 PATHINFO模式   http://hostname/index.php/home/user/login/var/value/
+#               更改PATHINFO参数分隔符 URL_PATHINFO_DEPR
+#2 REWRITE模式    http://hostname/home/user/login/var/value
+#3 兼容模式        兼容以上
+#
+URL_MODEL: 2
+
+LOAD_EXT_CONFIG: [db, info]
+
+MODULE_ALLOW_LIST: Main
+DEFAULT_MODULE: Main
+
+SESSION_AUTO_START: false
+
+#URL_CASE_INSENSITIVE 是否区分大小写
+URL_CASE_INSENSITIVE: true
