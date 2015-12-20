@@ -7,6 +7,6 @@ class IndexController extends Controller
 {
     public function index()
     {
-        print_r(C('URI_NAME'));
+        echo C('URL_ROUTER');
     }
 }

@@ -1,0 +1,5 @@
+URL_ROUTE_RULES: {
+  "User/login/:uname/:pwd": ['User/loginByUname','', {method: 'get'}],
+  "User": ['User/register','', {method: 'post'}],
+  "User/:uid": ['User/Update', '', {method: 'put'}]
+}

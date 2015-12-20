@@ -6,14 +6,16 @@
 #2 REWRITE模式    http://hostname/home/user/login/var/value
 #3 兼容模式        兼容以上
 #
-URL_MODEL: 2
+URL_MODEL: 1
 
-LOAD_EXT_CONFIG: [db, info]
+LOAD_EXT_CONFIG: [db, info, router]
 
-MODULE_ALLOW_LIST: Main
+MULTI_MODULE: false
 DEFAULT_MODULE: Main
 
 SESSION_AUTO_START: false
 
 #URL_CASE_INSENSITIVE 是否区分大小写
 URL_CASE_INSENSITIVE: true
+URL_ROUTER_ON: true
+
