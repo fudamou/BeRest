@@ -1,5 +1,6 @@
-URL_ROUTE_RULES: {
-  "User/login/:uname/:pwd": ['User/loginByUname','', {method: 'get'}],
-  "User": ['User/register','', {method: 'post'}],
-  "User/:uid": ['User/Update', '', {method: 'put'}]
-}
+URL_ROUTE_RULES:
+  "User/login/:uname/:passwd": ['User/login','', method: 'get']
+  "User/:uid": ['User/Update',  '', method: 'put']
+  "User/:uid": ['User/Delete',  '', method: 'delete']
+  "User/:uname": ['User/check',   '', method: 'get']
+  "User":      ['User/register','', method: 'post']
